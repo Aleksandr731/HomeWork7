@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Задача 2");
         int i = 0;
         while (i < 10) {
-            i = i + 1;
+            i += 1;
             System.out.print(i + " ");
         }
         System.out.println();
