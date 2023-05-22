@@ -17,7 +17,8 @@ public class Main {
         int contribution = 15_000;
         int total = 0;
         int month = 0;
-        while (total < 2_459_000) {
+        int objective = 2_459_000;
+        while (total < objective) {
             month += 1;
             total = total + contribution;
             System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
@@ -55,7 +56,8 @@ public class Main {
         int total = 0;
         int contribution = 15_000;
         int month = 0;
-        while (total <= 12_000_000) {
+        int objective = 12_000_000;
+        while (total <= objective) {
             month = month + 1;
             total = total + contribution + total * 7 / 100;
             System.out.println(month + " месяц, промежуточное накопление: " + total);
@@ -67,7 +69,8 @@ public class Main {
         int total = 0;
         int contribution = 15_000;
         int month = 0;
-        while (total <= 12_000_000) {
+        int objective = 12_000_000;
+        while (total <= objective) {
             month = month + 1;
             total = total + contribution + total * 7 / 100;
             if (month % 6 == 0) {
@@ -101,7 +104,7 @@ public class Main {
         System.out.println("Задача 8");
         int currentYear =1900;
         for (int year = 0; year < currentYear + 200; year = year + 79) {
-            if (year >= 1823) {
+            if (year >= currentYear - 100) {
                 System.out.println(year);
             }
         }
